@@ -1,66 +1,66 @@
 // Questions and answers Array
 var questions = [
   {
-    question: 'What does doctype in HTML do?',
+    question: 'What is the capital of Moldova?',
     answers: [
-      { answer: 'A. Tells the browser how to render the HTML markup', value: true },
-      { answer: 'B. Loads all references to external JavaScript files', value: false },
-      { answer: 'C. Adds CSS styles to the HTML page', value: false },
-      { answer: "D. It doesn't do anything it's just there as a comment to other developers", value: false }
+      { answer: 'A. Beltsy', value: false },
+      { answer: 'B. Chisinau', value: true },
+      { answer: 'C. Soroca', value: false },
+      { answer: 'D. Benderi', value: false }
     ]
   },
   {
-    question: 'What is NOT an HTML5 element?',
+    question: 'What is most popular folc dance in Moldova?',
     answers: [
-      { answer: 'block', value: true },
-      { answer: 'audio', value: false },
-      { answer: 'canvas', value: false },
-      { answer: 'section', value: false }
+      { answer: 'Molovancha', value: false },
+      { answer: 'Busujok', value: false },
+      { answer: 'Jock', value: true },
+      { answer: 'Salsa', value: false }
     ]
   },
   {
-    question: 'How can you make a script run asynchronous?',
+    question: 'How Moldova is governed?',
     answers: [
-      { answer: 'script async', value: true },
-      { answer: 'asynchronous', value: false },
-      { answer: 'async script', value: false },
-      { answer: 'script asynchronous', value: false }
+      { answer: 'Parlament', value: true },
+      { answer: 'President', value: false },
+      { answer: 'Gospodari', value: false },
+      { answer: 'Batrac', value: false }
     ]
   },
   {
-    question: 'What is the difference between classes and IDs in CSS?',
+    question: 'What is the difference between Moldova and Romania?',
     answers: [
-      { answer: 'IDs can only be used once in the HTML', value: true },
-      { answer: 'IDs can be accessed by JavaScript', value: false },
-      { answer: 'Classes are used on children elements', value: false },
-      { answer: "Classes can't be added to the body element", value: false }
+      { answer: 'Moldova is part of Russia, Romania is not', value: false },
+      { answer: 'Moldova is part of Romania', value: false },
+      { answer: 'Romania is smaller', value: false },
+      { answer: 'Moldova was part of USSR', value: true }
     ]
   },
   {
-    question: "What does 'reset' in CSS mean?",
+    question: "What does 'ferestruica' in Moldavian mean?",
     answers: [
-      { answer: 'Resets the default browser styling', value: true },
-      { answer: 'Normalizes styles accross all browsers', value: false },
-      { answer: 'Removes inline CSS styles', value: false },
-      { answer: 'Start the project over', value: false }
+      { answer: 'Fear', value: false },
+      { answer: 'Window', value: true},
+      { answer: 'Form', value: false },
+      { answer: 'Anger', value: false }
     ]
   },
   {
-    question: 'What does z-index do?',
+    question: 'What does Moldova export at most?',
     answers: [
-      { answer: 'Controls the vertical stacking order of elements that overlap', value: true },
-      { answer: 'Moves elements off screen', value: false },
-      { answer: 'Hides elements from the screen', value: false },
-      { answer: 'Controls the horizontal stacking order of elements that overlap', value: false }
+      { answer: 'Cars', value: false },
+      { answer: 'Anecdots', value: false },
+      { answer: 'Vine', value: true },
+      { answer: 'Chemicals', value: false }
     ]
   },
   {
-    question: 'What is the box model?',
+    question: 'What is the most beatiful place in Moldova?',
     answers: [
-      { answer: 'All HTML elements can be considered as boxes', value: true },
-      { answer: 'A way of stacking HTML elements', value: false },
-      { answer: 'A way of styling HTML elements', value: false },
-      { answer: 'Creates a way to position the browser grid', value: false }
+      { answer: 'Old Kahul', value: false},
+      { answer: 'Brinzeni', value: false },
+      { answer: 'Old Orhei', value: true },
+      { answer: 'Crikauzci', value: false }
     ]
   }
 ];
@@ -138,7 +138,7 @@ function unanswered() {
 function startGame() {
   $('.start-page').css('display', 'none');
   $('.questions-page').css('visibility', 'visible');
-  $('.timer').html('<p>Time remaining: <span class="time">30</span></p>');
+  $('.timer').html('<h2>Time remaining: <span class="time">30</span></h2>');
 
   $('.question').html(questions[counter].question);
   var showingAnswers =
@@ -195,12 +195,6 @@ function finishGame() {
 }
 
 // Reset the game
-function resetGame() {
-  counter = 0;
-  correctCounter = 0;
-  incorrectCounter = 0;
-  unansweredCounter = 0;
-  timer = 30;
-  startGame();
-  timerHolder();
-}
+document.getElementById("btn-lg reset-button").onclick = function () {
+return href = "index.html";
+};
